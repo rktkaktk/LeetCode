@@ -11,4 +11,13 @@ var twoSum = function(nums, target) {
         }
       }   
     }
+    
+    // let completemet = 0;
+    // for (let i = 0; i < nums.length; i++) {
+    //     completemet = target - nums[i];
+    //   if (completemet === nums[i]) {
+    //     return [i, j];
+    //   }
+    // }
+    
 };
