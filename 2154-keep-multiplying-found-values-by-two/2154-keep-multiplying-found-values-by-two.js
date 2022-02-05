@@ -10,14 +10,11 @@ var findFinalValue = function(nums, original) {
     return originNum;
   }
   
-  for (let idx in nums) {
-    if (nums[idx] === originNum) {
-      originNum = originNum * 2;
-      nums.splice(idx, 1);
+  for (let num of nums) {
+    if (num === originNum) {
+      originNum = originNum * 2
       return findFinalValue(nums, originNum);
     }
   }
-  
-  // return originNum;
 };
 
