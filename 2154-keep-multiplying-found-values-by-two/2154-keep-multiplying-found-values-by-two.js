@@ -12,7 +12,7 @@ var findFinalValue = function(nums, original) {
   
   for (let num of nums) {
     if (num === originNum) {
-      originNum = originNum * 2
+      originNum = originNum * 2;
       return findFinalValue(nums, originNum);
     }
   }
