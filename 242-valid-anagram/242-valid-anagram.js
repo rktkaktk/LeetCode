@@ -18,8 +18,8 @@ var isAnagram = function(s, t) {
     return map;
   }
   
-  let mapS = createNewMap(s);
-  let mapT = createNewMap(t);
+  const mapS = createNewMap(s);
+  const mapT = createNewMap(t);
   
   if (mapS.size !== mapT.size) {
     return false;  
