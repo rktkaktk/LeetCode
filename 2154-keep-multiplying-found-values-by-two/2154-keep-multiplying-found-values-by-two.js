@@ -6,7 +6,7 @@
 var findFinalValue = function(nums, original) {
   let originNum = original;
   
-  if (!nums.includes(original)) {
+  if (!nums.includes(originNum)) {
     return originNum;
   }
   
