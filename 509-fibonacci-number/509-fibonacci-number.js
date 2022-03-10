@@ -3,6 +3,7 @@
  * @return {number}
  */
 var fib = function(n) {
+  // On
   const result = [0, 1];
   
   for (let i = 2; i <=n; i++) {
