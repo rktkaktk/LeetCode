@@ -3,6 +3,7 @@
  * @return {number}
  */
 var fib = function(n) {
+  // O2n
   if (n === 0 || n === 1) {
     return n;
   }
