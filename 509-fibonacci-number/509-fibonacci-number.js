@@ -3,10 +3,14 @@
  * @return {number}
  */
 var fib = function(n) {
-  // O2n
-  if (n === 0 || n === 1) {
-    return n;
+  const result = [0, 1];
+  
+  for (let i = 2; i <=n; i++) {
+    const a = result[i - 1];
+    const b = result[i - 2];
+    
+    result.push(a + b);
   }
-     
-  return fib(n - 1) + fib(n - 2);
+  
+  return result[n];
 };
