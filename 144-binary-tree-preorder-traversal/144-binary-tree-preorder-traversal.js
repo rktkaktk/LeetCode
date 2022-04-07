@@ -23,5 +23,4 @@ var preorderTraversal = function(root) {
   }
   
   return result;
-    
 };
