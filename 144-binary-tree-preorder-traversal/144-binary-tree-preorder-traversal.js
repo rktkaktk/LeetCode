@@ -15,11 +15,13 @@ var preorderTraversal = function(root) {
   traversal(root);
   
   function traversal(root) {
-    if (root !== null) {
-      result.push(root.val);
-      traversal(root.left);
-      traversal(root.right);
+    if (root === null) {
+      return;
     }
+    
+    result.push(root.val);
+    traversal(root.left);
+    traversal(root.right);
   }
   
   return result;
